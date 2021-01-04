@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div th:replace="layouts/header :: head"/>
+    <title>Skyblog</title>
+</head>
+<body>
+    <div th:replace="layouts/header.html :: header" />
+    <div class="main-container">
+        <div class="blog-container">
+            <h1 class="post-title" th:text="${title}"></h1>
+            <div th:remove="tag" th:utext="${content}"></div>
+        </div>
+        <div class=extras-container></div>
+    </div>
+    <div th:replace="layouts/footer :: footer"/>
+</body>
+</html>
