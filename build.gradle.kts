@@ -23,6 +23,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-devtools")
 	implementation("com.atlassian.commonmark:commonmark:0.13.1")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.springframework.cloud:spring-cloud-gcp-starter-sql-postgresql")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	runtimeOnly("org.postgresql:postgresql")
